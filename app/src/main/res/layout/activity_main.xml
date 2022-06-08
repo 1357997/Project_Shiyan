@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="X Value"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/editTextY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Y Value"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editTextX"
+        android:layout_marginEnd="15dp"
+        android:text="Insert"/>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnInsert"
+        android:layout_alignTop="@+id/editTextY"
+        android:text="Show"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnShow"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="60dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnShowExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnSave"
+        android:layout_marginLeft="14dp"
+        android:text="Show results" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/mpChart"
+        android:layout_width="400dp"
+        android:layout_height="550dp"
+        android:layout_below="@id/btnSave"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
