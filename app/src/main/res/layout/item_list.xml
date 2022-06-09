@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgViewItem"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/imgViewItem"
+        app:layout_constraintTop_toTopOf="@id/imgViewItem"
+        tool:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/tv_item_date_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/imgViewItem"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_name"
+        tool:text="@tools:sample/date/ddmmyy" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

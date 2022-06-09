@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CP_Shiyan.iml" filepath="$PROJECT_DIR$/.idea/modules/CP_Shiyan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP_Shiyan.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
