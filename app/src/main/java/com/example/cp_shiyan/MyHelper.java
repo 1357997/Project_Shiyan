@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class MyHelper extends SQLiteOpenHelper {
+/*public class MyHelper extends SQLiteOpenHelper {
 
     public MyHelper(@Nullable Context context) {
         super(context, "MyDB", null, 1);
@@ -33,4 +33,4 @@ public class MyHelper extends SQLiteOpenHelper {
         sqLiteDatabase.insert("myTable", null, contentValues);
         return true;
     }
-}
+}*/
