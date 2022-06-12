@@ -46,6 +46,10 @@ dependencies {
     kapt "androidx.room:room-compiler:$roomVersion"
     implementation "androidx.room:room-ktx:$roomVersion"
 
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
     //ktx android
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'

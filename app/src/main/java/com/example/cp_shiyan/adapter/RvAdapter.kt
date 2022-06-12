@@ -1,8 +1,15 @@
 package com.example.cp_shiyan.adapter
 
+import android.graphics.Bitmap
+import android.graphics.drawable.Drawable
+import android.transition.Transition
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.target.BitmapImageViewTarget
+import com.bumptech.glide.request.target.CustomTarget
+import com.bumptech.glide.request.target.SimpleTarget
 import com.example.cp_shiyan.databinding.ItemListBinding
 import com.example.cp_shiyan.room.ItemEntity
 
@@ -33,7 +40,11 @@ class RvAdapter(
         with(holder) {
             with(listItem[position]) {
                 binding.tvItemName.text = this.itemName
-                binding.tvItemDateCreated.text = this.createdAt.toString()
+                binding.tvItemDateCreated.text = this.createdAt
+                Glide.with(holder.itemView.context)
+                    .asBitmap()
+                    .load(this.imagePath + this.itemName)
+                    .into(binding.imgViewItem)
             }
         }
     }

@@ -8,5 +8,6 @@ import androidx.room.PrimaryKey
 data class ItemEntity(
     @PrimaryKey val itemName: String,
     @ColumnInfo(name = "created_at")
-    val createdAt: String
+    val createdAt: String,
+    val imagePath: String
 )

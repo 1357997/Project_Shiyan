@@ -2,7 +2,10 @@ package com.example.cp_shiyan
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cp_shiyan.databinding.ActivityMainBinding
 import com.example.cp_shiyan.room.RoomRepositoryImpl
@@ -50,34 +53,34 @@ class Activity : AppCompatActivity(), CoroutineScope {
         saveChart()
     }
 
-    fun saveChart(){
+    fun saveChart() {
         binding.btnSave.setOnClickListener {
             binding.mpChart.saveToGallery(binding.editTextItemName.text.toString(), 100)
-            //binding.mpChart.saveToPath(binding.editTextItemName.text.toString(),"/storage/emmc/DCIM")
         }
     }
 
     fun exqShowBtn(lineChart: LineChart) {
 
         val listPoints: MutableList<Entry> = mutableListOf(
-            Entry(binding.editTextX1.text.toString().toFloat(),
-                binding.editTextY1.text.toString().toFloat()
+            Entry(
+                binding.editTextX1.text.toString().checkNull().toFloat(),
+                binding.editTextY1.text.toString().checkNull().toFloat()
             ),
             Entry(
-                binding.editTextX2.text.toString().toFloat(),
-                binding.editTextY2.text.toString().toFloat()
+                binding.editTextX2.text.toString().checkNull().toFloat(),
+                binding.editTextY2.text.toString().checkNull().toFloat()
             ),
             Entry(
-                binding.editTextX3.text.toString().toFloat(),
-                binding.editTextY3.text.toString().toFloat()
+                binding.editTextX3.text.toString().checkNull().toFloat(),
+                binding.editTextY3.text.toString().checkNull().toFloat()
             ),
             Entry(
-                binding.editTextX4.text.toString().toFloat(),
-                binding.editTextY4.text.toString().toFloat()
+                binding.editTextX4.text.toString().checkNull().toFloat(),
+                binding.editTextY4.text.toString().checkNull().toFloat()
             ),
             Entry(
-                binding.editTextX5.text.toString().toFloat(),
-                binding.editTextY5.text.toString().toFloat()
+                binding.editTextX5.text.toString().checkNull().toFloat(),
+                binding.editTextY5.text.toString().checkNull().toFloat()
             ),
         )
 
@@ -90,5 +93,13 @@ class Activity : AppCompatActivity(), CoroutineScope {
         lineChart.clear()
         lineChart.setData(lineData)
         lineChart.invalidate()
+    }
+}
+
+fun String.checkNull(): String {
+    return if (this.isNullOrBlank()) {
+        "0"
+    } else {
+        this
     }
 }

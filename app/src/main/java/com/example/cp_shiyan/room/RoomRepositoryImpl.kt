@@ -14,7 +14,8 @@ class RoomRepositoryImpl(context: Context) : RoomRepository {
         dao.insertItem(
             ItemEntity(
                 itemName = itemName,
-                createdAt = sdf.format(resultDate)
+                createdAt = sdf.format(resultDate),
+                imagePath = "/storage/emulated/0/DCIM"
             )
         )
     }
