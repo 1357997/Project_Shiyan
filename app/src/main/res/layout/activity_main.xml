@@ -20,7 +20,7 @@
 
     <EditText
         android:id="@+id/editTextX1"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -32,9 +32,9 @@
 
     <EditText
         android:id="@+id/editTextX2"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="66dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="X2"
@@ -44,9 +44,9 @@
 
     <EditText
         android:id="@+id/editTextX3"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="116dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="X3"
@@ -56,9 +56,9 @@
 
     <EditText
         android:id="@+id/editTextX4"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
+        android:layout_marginStart="166dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="X4"
@@ -68,9 +68,9 @@
 
     <EditText
         android:id="@+id/editTextX5"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
+        android:layout_marginStart="216dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="X5"
@@ -80,7 +80,7 @@
 
     <EditText
         android:id="@+id/editTextY1"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextItemName"
@@ -93,9 +93,9 @@
 
     <EditText
         android:id="@+id/editTextY2"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="66dp"
         android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Y2"
@@ -105,9 +105,9 @@
 
     <EditText
         android:id="@+id/editTextY3"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="116dp"
         android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Y3"
@@ -117,9 +117,9 @@
 
     <EditText
         android:id="@+id/editTextY4"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
+        android:layout_marginStart="166dp"
         android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Y4"
@@ -129,9 +129,9 @@
 
     <EditText
         android:id="@+id/editTextY5"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
+        android:layout_marginStart="216dp"
         android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Y5"
@@ -143,8 +143,8 @@
         android:id="@+id/btnShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
         android:text="Show Chart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -154,9 +154,9 @@
         android:id="@+id/btnInsert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="44dp"
-        android:text="Insert"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="20dp"
+        android:text="Insert in Db"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -165,8 +165,8 @@
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:text="Save Chart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnShow" />

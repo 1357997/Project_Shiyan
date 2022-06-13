@@ -43,7 +43,7 @@ class RvAdapter(
                 binding.tvItemDateCreated.text = this.createdAt
                 Glide.with(holder.itemView.context)
                     .asBitmap()
-                    .load(this.imagePath + this.itemName)
+                    .load(this.imagePath)
                     .into(binding.imgViewItem)
             }
         }

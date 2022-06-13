@@ -2,6 +2,7 @@ package com.example.cp_shiyan
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Environment
 import android.text.Editable
 import android.widget.Button
 import android.widget.EditText
@@ -51,6 +52,7 @@ class Activity : AppCompatActivity(), CoroutineScope {
         binding.mpChart.setBackgroundColor(-1)
         lineDataSet.lineWidth = 4.toFloat()
         saveChart()
+        //getExternalFilesDir(Environment.DIRECTORY_PICTURES)
     }
 
     fun saveChart() {

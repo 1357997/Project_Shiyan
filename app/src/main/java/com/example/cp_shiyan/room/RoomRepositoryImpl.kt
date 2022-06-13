@@ -15,7 +15,7 @@ class RoomRepositoryImpl(context: Context) : RoomRepository {
             ItemEntity(
                 itemName = itemName,
                 createdAt = sdf.format(resultDate),
-                imagePath = "/storage/emulated/0/DCIM"
+                imagePath = "/storage/emulated/0/DCIM/" + itemName + ".png"
             )
         )
     }

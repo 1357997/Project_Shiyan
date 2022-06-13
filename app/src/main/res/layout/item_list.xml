@@ -7,10 +7,10 @@
 
     <ImageView
         android:id="@+id/imgViewItem"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tool:src="@tools:sample/avatars" />
@@ -19,21 +19,21 @@
         android:id="@+id/tv_item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@id/imgViewItem"
-        app:layout_constraintTop_toTopOf="@id/imgViewItem"
+        app:layout_constraintStart_toStartOf="@id/imgViewItem"
+        app:layout_constraintTop_toBottomOf="@id/imgViewItem"
         tool:text="@tools:sample/full_names" />
 
     <TextView
         android:id="@+id/tv_item_date_created"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toEndOf="@id/imgViewItem"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/imgViewItem"
         app:layout_constraintTop_toBottomOf="@id/tv_item_name"
         tool:text="@tools:sample/date/ddmmyy" />
 
